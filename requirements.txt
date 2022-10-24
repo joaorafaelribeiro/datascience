@@ -4,3 +4,4 @@ redis
 pandas
 streamlit
 pyodbc
+sqlite3
