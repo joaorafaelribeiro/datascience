@@ -1,7 +1,4 @@
 # To ensure app dependencies are ported from your virtual environment/host machine into your container, run 'pip freeze > requirements.txt' in the terminal to overwrite this file
-flask
 redis
-pandas
-streamlit
-pyodbc
-sqlite3
+django
+gunicorn

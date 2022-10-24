@@ -9,11 +9,11 @@
             "python": {
                 "pathMappings": [
                     {
-                        "localRoot": "${workspaceFolder}",
+                        "localRoot": "${workspaceFolder}/app",
                         "remoteRoot": "/app"
                     }
                 ],
-                "projectType": "general",
+                "projectType": "django",
                 
             }
             
