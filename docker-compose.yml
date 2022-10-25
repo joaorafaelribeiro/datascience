@@ -6,5 +6,12 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
+    environment:
+      - DATABASE_SERVER=kaan/homologacao
+      - DATABASE_NAME=idea
+      - DATABASE_USER=idea
+      - DATABASE_PWD=useridea
+    volumes:
+      - ./src:/app
     ports:
       - 8000:8000
