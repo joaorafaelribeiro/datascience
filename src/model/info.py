@@ -1,4 +1,5 @@
 class Info:
+    data = None
     orgaos = None
-    processo_by_month = None
-    movimentacoes_by_month = None
+    total_processos = None
+    total_movimentacoes = None

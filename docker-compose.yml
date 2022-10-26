@@ -7,8 +7,9 @@ services:
       context: .
       dockerfile: ./Dockerfile
     environment:
-      - DATABASE_SERVER=kaan/homologacao
-      - DATABASE_NAME=idea
+      - ODBC_DRIVE=FreeTDS
+      - DATABASE_SERVER=KAAN\HOMOLOGACAO
+      - DATABASE_NANE=idea
       - DATABASE_USER=idea
       - DATABASE_PWD=useridea
     volumes:
