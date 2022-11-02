@@ -6,6 +6,7 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
+      target: debug
     environment:
       - ODBC_DRIVE=FreeTDS
       - DATABASE_SERVER=KAAN\HOMOLOGACAO
@@ -16,3 +17,4 @@ services:
       - ./src:/app
     ports:
       - 8000:8000
+      - 5678:5678

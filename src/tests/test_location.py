@@ -1,7 +1,6 @@
-import unittest
+import pytest
 from util.geo_cep import location
+import database.idea as idea
 
-    
-def test_get_location_by_cep():
-    local = location("41620430")
-    assert local != None, 'endereço não encontrado'
+def test_obter_coord_by_cep():
+    assert location("LARGO DA INDEPENDÊNCIA, Kennedy, Alagoinhas BA") != None, 'endereço não encontrado'

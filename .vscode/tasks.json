@@ -18,8 +18,10 @@
 			"dependsOn": [
 				"docker-build"
 			],
-			"python": {
-				"file": "${file}"
+			"dockerRun": {
+				"image": "datascience",
+				"command": "streamlit run app\\datascience.py --port.server 8000",
+				"volumes": ["src","app"]
 			}
 		}
 	]

@@ -1,21 +1,29 @@
 {
     "configurations": [
         {
-            "name": "Docker: Python - General",
-            "type": "docker",
+            "name": "Docker: Streamlit - Datascience",
+            "type": "python",
+            "request": "attach",
+            "pathMappings": [
+                {
+                    "localRoot": "${workspaceFolder}/src",
+                    "remoteRoot": "/app"
+                }
+            ],
+            "justMyCode": true,
+            "redirectOutput": true,
+            "port": 5678,
+            "host": "localhost",
+        },
+        {
+            "name": "Streamlit - Datascience",
+            "type": "python",
             "request": "launch",
-            "preLaunchTask": "docker-run: debug",
-            "internalConsoleOptions": "openOnFirstSessionStart",
-            "python": {
-                "pathMappings": [
-                    {
-                        "localRoot": "${workspaceFolder}/src",
-                        "remoteRoot": "/app"
-                    }
-                ],
-                "projectType": "general"
-            },
-            "containerName": "datascience"
+            "program": "C:\\Users\\joao.ribeiro\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\Scripts\\streamlit.exe",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": ["run", "src\\datascience.py","--server.port","8000"]
+
         }
     ]
 }
